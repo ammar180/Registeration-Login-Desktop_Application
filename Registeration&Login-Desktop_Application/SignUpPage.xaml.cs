@@ -43,13 +43,15 @@ namespace Registeration_Login_Desktop_Application
             theUser user = new theUser();
             user.Username = txt_userName.Text;
             user.userID = db.theUsers.Max(x => x.userID) + 1;
+            IsValidPassword();
             if (validPassword)
             {
                 user.Password = txt_password.Text;
                 user.City = combCity.SelectedItem.ToString().Split(' ').Last();
 
                 int theAge = int.Parse(txt_age.Text);
-                if (validAge)
+
+                if (theAge > 16 && theAge < 60)
                 {
                     user.Age = theAge;
                     if (validPhone)
@@ -78,13 +80,7 @@ namespace Registeration_Login_Desktop_Application
 
         }
 
-        private void btn_SingIN_Click(object sender, RoutedEventArgs e)
-        {
-            SignINPage iNPage = new SignINPage();
-            NavigationService.Navigate(iNPage);
-        }
-
-        private void txt_password_TextChanged(object sender, TextChangedEventArgs e)
+        private void IsValidPassword()
         {
             bool hasDigit = false,
                 hasLetter = false,
@@ -93,12 +89,12 @@ namespace Registeration_Login_Desktop_Application
             string password = txt_password.Text;
             foreach (char c in password)
             {
-                if(char.IsDigit(c))
-                 hasDigit = true;
-                if(char.IsLetter(c))
-                hasLetter = true;
-                if(!char.IsLetterOrDigit(c))
-                hasSpecial = true;
+                if (char.IsDigit(c))
+                    hasDigit = true;
+                if (char.IsLetter(c))
+                    hasLetter = true;
+                if (!char.IsLetterOrDigit(c))
+                    hasSpecial = true;
             }
             if (hasSpecial && hasLetter && hasDigit)
                 validPassword = true;
@@ -106,13 +102,20 @@ namespace Registeration_Login_Desktop_Application
                 validPassword = false;
         }
 
+        private void btn_SingIN_Click(object sender, RoutedEventArgs e)
+        {
+            SignINPage iNPage = new SignINPage();
+            NavigationService.Navigate(iNPage);
+        }
+
+        private void txt_password_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
         private void txt_age_TextChanged(object sender, TextChangedEventArgs e)
         {
-            int theAge = int.Parse(txt_age.Text);
-            if (theAge > 16 || theAge < 60)
-                validAge = true;
-            else
-                validAge = false;
+            
         }
     }
 }

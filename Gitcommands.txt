@@ -1,61 +1,159 @@
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
-$ mkdir GitFolder
 
 IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
-$ cd GitFoleder
-bash: cd: GitFoleder: No such file or directory
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
-$ cd GitFolder
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder
-$ git --version
-git version 2.42.0.windows.2
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder
 $ git init
-Initialized empty Git repository in C:/Users/IT/Desktop/AmmarAhme_W3_0522011/GitFolder/.git/
+Initialized empty Git repository in C:/Users/IT/Desktop/AmmarAhme_W3_0522011/.git/
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git status
-On branch master
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git add --all
+warning: adding embedded git repository: GitFolder
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> GitFolder
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached GitFolder
+hint:
+hint: See "git help submodule" for more information.
 
-No commits yet
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git add --all
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        AmmarAhmed-Desktop_Application_Competency.sln
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git add AmmarAhmed-Desktop_Application_Competency.sln
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git config --global user.name ammar180
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git config --global user.email ammaromran360@gmail.com
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git push -u origin master
-error: src refspec master does not match any
-error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
-error: remote origin already exists.
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git commit -m "DefultCommit"
-[master (root-commit) 43a064c] DefultCommit
- 1 file changed, 25 insertions(+)
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git commit -m firstCommit
+[master (root-commit) f502f14] firstCommit
+ 122 files changed, 165705 insertions(+)
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/FileContentIndex/92576785-93f2-4db1-8b4d-a635fd10d0a1.vsidx
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/FileContentIndex/a02800c6-bcaa-431f-9aac-a88b0f46843d.vsidx
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/FileContentIndex/ab50b6eb-d301-45ac-acd1-199e15734abf.vsidx
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/FileContentIndex/dea6788b-797d-4b39-a423-510548fb9375.vsidx
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/FileContentIndex/f1e05ee6-5439-4a83-a872-5ae611f4fc73.vsidx
+ create mode 100644 .vs/AmmarAhmed-Desktop_Application_Competency/v17/.suo
  create mode 100644 AmmarAhmed-Desktop_Application_Competency.sln
+ create mode 100644 Gitcommands.txt
+ create mode 100644 Registeration&Login-Desktop_Application/Admin.cs
+ create mode 100644 Registeration&Login-Desktop_Application/AdminPage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/AdminPage.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/App.config
+ create mode 100644 Registeration&Login-Desktop_Application/App.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/App.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/BackGround.png
+ create mode 100644 Registeration&Login-Desktop_Application/DeletePage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/DeletePage.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/ForgetPasswordPage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/ForgetPasswordPage.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Image1.png
+ create mode 100644 Registeration&Login-Desktop_Application/Image2.png
+ create mode 100644 Registeration&Login-Desktop_Application/MainWindow.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/MainWindow.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.Context.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.Context.tt
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.Designer.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.edmx
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.edmx.diagram
+ create mode 100644 Registeration&Login-Desktop_Application/Model1.tt
+ create mode 100644 Registeration&Login-Desktop_Application/Properties/AssemblyInfo.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Properties/Resources.Designer.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Properties/Resources.resx
+ create mode 100644 Registeration&Login-Desktop_Application/Properties/Settings.Designer.cs
+ create mode 100644 Registeration&Login-Desktop_Application/Properties/Settings.settings
+ create mode 100644 Registeration&Login-Desktop_Application/Registeration&Login-Desktop_Application.csproj
+ create mode 100644 Registeration&Login-Desktop_Application/SignINPage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/SignINPage.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/SignUpPage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/SignUpPage.xaml.cs
+ create mode 100644 Registeration&Login-Desktop_Application/ThePackGround.png
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/EntityFramework.SqlServer.dll
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/EntityFramework.SqlServer.xml
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/EntityFramework.dll
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/EntityFramework.xml
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/Registeration&Login-Desktop_Application.exe
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/Registeration&Login-Desktop_Application.exe.config
+ create mode 100644 Registeration&Login-Desktop_Application/bin/Debug/Registeration&Login-Desktop_Application.pdb
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/.NETFramework,Version=v4.8.1.AssemblyAttributes.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/AdminPage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/AdminPage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/AdminPage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/App.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/App.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/App.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/DeletePage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/DeletePage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/DeletePage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/ForgetPasswordPage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/ForgetPasswordPage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/ForgetPasswordPage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/MainWindow.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/MainWindow.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/MainWindow.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.csproj.AssemblyReference.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.csproj.CopyComplete
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.csproj.CoreCompileInputs.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.csproj.FileListAbsolute.txt
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.csproj.GenerateResource.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.exe
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.g.resources
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application.pdb
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_Content.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_Content.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_MarkupCompile.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_MarkupCompile.i.cache
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_MarkupCompile.i.lref
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration&Login-Desktop_Application_MarkupCompile.lref
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/Registeration_Login_Desktop_Application.Properties.Resources.resources
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignINPage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignINPage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignINPage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignUpPage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignUpPage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/SignUpPage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/TempPE/Model1.Context.cs.dll
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/TempPE/Model1.Designer.cs.dll
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/TempPE/Model1.cs.dll
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/edmxResourcesToEmbed/Model1.csdl
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/edmxResourcesToEmbed/Model1.msl
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/edmxResourcesToEmbed/Model1.ssdl
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/userProfilePage.baml
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/userProfilePage.g.cs
+ create mode 100644 Registeration&Login-Desktop_Application/obj/Debug/userProfilePage.g.i.cs
+ create mode 100644 Registeration&Login-Desktop_Application/packages.config
+ create mode 100644 Registeration&Login-Desktop_Application/theUser.cs
+ create mode 100644 Registeration&Login-Desktop_Application/userProfilePage.xaml
+ create mode 100644 Registeration&Login-Desktop_Application/userProfilePage.xaml.cs
+ create mode 100644 RegisterationDesktopAppSCHEMA.txt
+ create mode 100644 TestCase_Task4_Day1.pdf
+ create mode 100644 packages/EntityFramework.6.2.0/Content/net40/App.config.transform
+ create mode 100644 packages/EntityFramework.6.2.0/Content/net40/Web.config.transform
+ create mode 100644 packages/EntityFramework.6.2.0/EntityFramework.6.2.0.nupkg
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net40/EntityFramework.SqlServer.dll
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net40/EntityFramework.SqlServer.xml
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net40/EntityFramework.dll
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net40/EntityFramework.xml
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net45/EntityFramework.SqlServer.dll
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net45/EntityFramework.SqlServer.xml
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net45/EntityFramework.dll
+ create mode 100644 packages/EntityFramework.6.2.0/lib/net45/EntityFramework.xml
+ create mode 100644 packages/EntityFramework.6.2.0/tools/EntityFramework.PowerShell.Utility.dll
+ create mode 100644 packages/EntityFramework.6.2.0/tools/EntityFramework.PowerShell.dll
+ create mode 100644 packages/EntityFramework.6.2.0/tools/EntityFramework.psd1
+ create mode 100644 packages/EntityFramework.6.2.0/tools/EntityFramework.psm1
+ create mode 100644 packages/EntityFramework.6.2.0/tools/about_EntityFramework.help.txt
+ create mode 100644 packages/EntityFramework.6.2.0/tools/init.ps1
+ create mode 100644 packages/EntityFramework.6.2.0/tools/install.ps1
+ create mode 100644 packages/EntityFramework.6.2.0/tools/migrate.exe
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
 $ git push -u origin master
 To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
  ! [rejected]        master -> master (fetch first)
@@ -66,141 +164,34 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git push origin master
-To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
- ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git branch br_ammar
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git push origin master
-To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
- ! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (master)
+$ git checkout br_ammar
+Switched to branch 'br_ammar'
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
-error: remote origin already exists.
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git push origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 698 bytes | 698.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
- * [new branch]      master -> master
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git branch Project
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
-$ git checkout Project
-Switched to branch 'Project'
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git push origin Project
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-remote:
-remote: Create a pull request for 'Project' on GitHub by visiting:
-remote:      https://github.com/ammar180/Registeration-Login-Desktop_Application/pull/new/Project
-remote:
-To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
- * [new branch]      Project -> Project
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git status
-On branch Project
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (br_ammar)
+$ git commit -m firstCommit
+On branch br_ammar
 nothing to commit, working tree clean
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git commit -m "first commit"
-On branch Project
-nothing to commit, working tree clean
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git push origin Project
-Everything up-to-date
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git branch trial
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git branch --list
-* Project
-  master
-  trial
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git branch -d trial
-Deleted branch trial (was 43a064c).
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git diff
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git branch trial
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git branch -d trial
-Deleted branch trial (was 43a064c).
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git diff
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git diff
-diff --git a/AmmarAhmed-Desktop_Application_Competency.sln b/AmmarAhmed-Desktop_Application_Competency.sln
-index e5995db..67c6f5c 100644
---- a/AmmarAhmed-Desktop_Application_Competency.sln
-+++ b/AmmarAhmed-Desktop_Application_Competency.sln
-@@ -23,3 +23,5 @@ Global
-                SolutionGuid = {C21EA789-FB70-4860-8244-3796546D8BE2}
-        EndGlobalSection
- EndGlobal
-+
-+
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git commit -m "first commit"
-On branch Project
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   AmmarAhmed-Desktop_Application_Competency.sln
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git add AmmarAhmed-Desktop_Application_Competency.sln
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git commit -m "first commit"
-[Project fbd9b34] first commit
- 1 file changed, 2 insertions(+)
-
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
-$ git push origin Project
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (br_ammar)
+$ git push -u origin br_ammar
+Enumerating objects: 125, done.
+Counting objects: 100% (125/125), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+Compressing objects: 100% (118/118), done.
+Writing objects: 100% (125/125), 12.53 MiB | 2.46 MiB/s, done.
+Total 125 (delta 31), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (31/31), done.
+remote:
+remote: Create a pull request for 'br_ammar' on GitHub by visiting:
+remote:      https://github.com/ammar180/Registeration-Login-Desktop_Application/pull/new/br_ammar
+remote:
 To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
-   43a064c..fbd9b34  Project -> Project
+ * [new branch]      br_ammar -> br_ammar
+branch 'br_ammar' set up to track 'origin/br_ammar'.
 
-IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011 (br_ammar)
 $
