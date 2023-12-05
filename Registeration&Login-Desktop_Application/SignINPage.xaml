@@ -1,0 +1,45 @@
+﻿<Page x:Class="Registeration_Login_Desktop_Application.SignINPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registeration_Login_Desktop_Application"
+      mc:Ignorable="d" 
+      d:DesignHeight="660" d:DesignWidth="660"
+      Title="SignINPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="82*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/BackGround.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Sign-In Page" Style="{StaticResource HeaderLabelStyle}" Height="50" Width="620" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+        <Label Content="UserName:" Style="{StaticResource NormalLabStyle}" Margin="107,17,0,0" Grid.Row="2" Height="36" Width="100"/>
+        <Label Content="Password:" Style="{StaticResource NormalLabStyle}" Margin="107,0,0,0" Grid.Row="3" Height="36" VerticalAlignment="Center" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Name="txt_userName" Margin="10,17,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Height="36" Grid.Column="1" FontSize="22"/>
+        <TextBox HorizontalAlignment="Left" Name="txt_password" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="317" Height="36" Margin="10,0,0,0" Grid.Column="1" FontSize="22"/>
+        <Button Content="SignIn" Name="btn_login" Style="{StaticResource btnSyle}"  Margin="10,0,0,0" Grid.Row="4" Height="42" Width="317" Background="#FFF0121D" VerticalAlignment="Center" Click="btn_login_Click" Grid.Column="1"/>
+        <Label Content="Don't have Account?" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFF9F7F7" Width="173" FontSize="18" Height="34"/>
+        <Button Content="SignUp" x:Name="btn_SignUp" Style="{StaticResource ResourceKey=btnSyle}"  Margin="10,8,0,0" Grid.Row="6" Height="42" Width="317" Background="#FFF0121D" Click="btn_SignUp_Click" Grid.Column="1"/>
+        <Button Content="Foreget Password" x:Name="btn_foregetPassword" Style="{StaticResource ResourceKey=btnSyle}"  Margin="10,0,0,0" Grid.Row="5" Height="42" Width="317" Background="#FFF0121D" Click="btn_foregetPassword_Click" Grid.Column="1" VerticalAlignment="Center"/>
+        <Label Content="Who are you" Style="{StaticResource NormalLabStyle}" Margin="107,0,0,0" Grid.Row="1" Height="36" Width="108" VerticalAlignment="Center"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Name="CombWho" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="120" Height="36" FontSize="18" SelectedIndex="0">
+            <ComboBoxItem>User</ComboBoxItem>
+            <ComboBoxItem>Admin</ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</Page>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RegisterationANDLoginModelStoreContainer" CdmEntityContainer="RegisterationANDLoginEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="RegisterationANDLoginModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="admin_username" ColumnName="admin_username" />
+          <ScalarProperty Name="admin_pass" ColumnName="admin_pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="theUsers">
+      <EntityTypeMapping TypeName="RegisterationANDLoginModel.theUser">
+        <MappingFragment StoreEntitySet="theUser">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

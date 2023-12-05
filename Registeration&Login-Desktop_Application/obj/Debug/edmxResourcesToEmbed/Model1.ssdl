@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RegisterationANDLoginModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="admin_id" />
+    </Key>
+    <Property Name="admin_id" Type="int" Nullable="false" />
+    <Property Name="admin_username" Type="varchar" MaxLength="50" />
+    <Property Name="admin_pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="theUser">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="12" />
+    <Property Name="Gender" Type="varchar" MaxLength="7" />
+    <Property Name="City" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="RegisterationANDLoginModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="theUser" EntityType="Self.theUser" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

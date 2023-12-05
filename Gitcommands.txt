@@ -1,0 +1,206 @@
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
+$ mkdir GitFolder
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
+$ cd GitFoleder
+bash: cd: GitFoleder: No such file or directory
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011
+$ cd GitFolder
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder
+$ git --version
+git version 2.42.0.windows.2
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder
+$ git init
+Initialized empty Git repository in C:/Users/IT/Desktop/AmmarAhme_W3_0522011/GitFolder/.git/
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        AmmarAhmed-Desktop_Application_Competency.sln
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git add AmmarAhmed-Desktop_Application_Competency.sln
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git config --global user.name ammar180
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git config --global user.email ammaromran360@gmail.com
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+error: remote origin already exists.
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git commit -m "DefultCommit"
+[master (root-commit) 43a064c] DefultCommit
+ 1 file changed, 25 insertions(+)
+ create mode 100644 AmmarAhmed-Desktop_Application_Competency.sln
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git push -u origin master
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git push origin master
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git push origin master
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ammar180/Registeration-Login-Desktop_Application.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git remote add origin https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+error: remote origin already exists.
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 698 bytes | 698.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+ * [new branch]      master -> master
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git branch Project
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (master)
+$ git checkout Project
+Switched to branch 'Project'
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git push origin Project
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Project' on GitHub by visiting:
+remote:      https://github.com/ammar180/Registeration-Login-Desktop_Application/pull/new/Project
+remote:
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+ * [new branch]      Project -> Project
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git status
+On branch Project
+nothing to commit, working tree clean
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git commit -m "first commit"
+On branch Project
+nothing to commit, working tree clean
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git push origin Project
+Everything up-to-date
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git branch trial
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git branch --list
+* Project
+  master
+  trial
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git branch -d trial
+Deleted branch trial (was 43a064c).
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git diff
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git branch trial
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git branch -d trial
+Deleted branch trial (was 43a064c).
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git diff
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git diff
+diff --git a/AmmarAhmed-Desktop_Application_Competency.sln b/AmmarAhmed-Desktop_Application_Competency.sln
+index e5995db..67c6f5c 100644
+--- a/AmmarAhmed-Desktop_Application_Competency.sln
++++ b/AmmarAhmed-Desktop_Application_Competency.sln
+@@ -23,3 +23,5 @@ Global
+                SolutionGuid = {C21EA789-FB70-4860-8244-3796546D8BE2}
+        EndGlobalSection
+ EndGlobal
++
++
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git commit -m "first commit"
+On branch Project
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   AmmarAhmed-Desktop_Application_Competency.sln
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git add AmmarAhmed-Desktop_Application_Competency.sln
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git commit -m "first commit"
+[Project fbd9b34] first commit
+ 1 file changed, 2 insertions(+)
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$ git push origin Project
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ammar180/Registeration-Login-Desktop_Application.git
+   43a064c..fbd9b34  Project -> Project
+
+IT@DESKTOP-CL9QT5Q MINGW64 ~/Desktop/AmmarAhme_W3_0522011/GitFolder (Project)
+$

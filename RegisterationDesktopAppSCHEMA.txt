@@ -1,0 +1,25 @@
+CREATE DATABASE RegisterationANDLogin;
+use RegisterationANDLogin
+
+CREATE table theUser(
+	userID int primary key,
+	Username varchar(50),
+	Password varchar(50),
+	Age int check (Age > 17 or Age < 60),
+	PhoneNumber varchar(12) UNIQUE,
+	Gender varchar(7) check(Gender = 'Male' or Gender = 'Female'),
+	City varchar(10)
+);
+
+insert into theUser values
+(1, 'User1', 'Pass#1', 20, '0103424578', 'Male', 'Giza')
+select * from theUser
+
+CREATE TABLE [Admin](
+	admin_id int primary key,
+	admin_username varchar(50),
+	admin_pass varchar(50)
+);
+insert into [Admin] values
+(1, 'Ammar', 'Ammar');
+select * from [Admin]
